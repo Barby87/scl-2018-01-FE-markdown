@@ -1,21 +1,16 @@
 {
   "name": "scl-2018-01-fe-markdown",
   "version": "0.0.1",
-  "description": "Librería que permite analizar archivos en formato Markdown, verifica los links que contienen estos archivos\u001b[D\u001b[D\u001b[i\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C y \u001b[2~ver\u001b[2~ifica los links que contienen estos archivos.",
+  "description": "Librería que permite analizar archivos en formato Markdown, verifica los links que contienen estos archivos.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Barby87/scl-2018-01-FE-markdown.git"
   },
   "keywords": [
-    "markdown",
-    "links\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C",
-    "análisis",
-    "links",
-    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dlibrería",
     "markdown",
     "links",
     "análisis"
@@ -25,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/Barby87/scl-2018-01-FE-markdown/issues"
   },
-  "homepage": "https://github.com/Barby87/scl-2018-01-FE-markdown#readme"
+  "homepage": "https://github.com/Barby87/scl-2018-01-FE-markdown#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "jest": "^23.5.0"
+  }
 }
