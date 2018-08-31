@@ -1,8 +1,11 @@
 {
-  "name": "scl-2018-01-fe-markdown",
+  "name": "markdownjs",
   "version": "0.0.1",
   "description": "Librería que permite analizar archivos en formato Markdown, verifica los links que contienen estos archivos.",
-  "main": "index.js",
+  "main": "src/index.js",
+  "bin": {
+    "markdownjs": "src/index.js"
+  },
   "scripts": {
     "test": "jest"
   },
@@ -26,6 +29,9 @@
   },
   "dependencies": {
     "chai": "^4.1.2",
-    "jest": "^23.5.0"
+    "g": "^2.0.1",
+    "jest": "^23.5.0",
+    "marked": "^0.5.0",
+    "node-fetch": "^2.2.0"
   }
 }
