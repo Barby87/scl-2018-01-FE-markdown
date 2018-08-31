@@ -26,6 +26,26 @@ markdownLinkExtractor(joiningPath).then((values) => {
 });
 
 
+if (require.main === module) {
+  let options = {};
+  if (argsUser.includes('--validate')) options.validate = true;
+  if (argsUser.includes('--stats')) options.stats = true;
+}
+
+  mdLinks(fileName, options).then((links) => {
+    if (links.length === 0) console.error('No se encontraron links');
+    links.forEach(element => {
+      let result = '';
+      if (options.validate) result = `${element.path} : ${element.line} : ${element.href} : ${element.text} : ${element.ok} : ${element.status}`;
+      else if (options.stats) result = `total: ${element.total} ok : ${element.ok} fails: ${element.fails}`;
+      else result = `${element.path} : ${element.line} : ${element.href} : ${element.text}`;
+      console.log(result);
+    });
+  }).catch((error) => {
+    console.error(error);
+  });
+
+
     // Función que lee un archivo y retorna promesa con el contenido del archivo
     function markdownLinkExtractor(filePath) {
       return new Promise((resolve, reject) => {
