@@ -28,10 +28,11 @@ markdownLinkExtractor(joiningPath).then((values) => {
 
 if (require.main === module) {
   let options = {};
-  if (argsUser.includes('--validate')) options.validate = true;
-  if (argsUser.includes('--stats')) options.stats = true;
+  if (argUser.includes('--validate')) options.validate = true;
+  if (argUser.includes('--stats')) options.stats = true;
 }
 
+/*
   mdLinks(fileName, options).then((links) => {
     if (links.length === 0) console.error('No se encontraron links');
     links.forEach(element => {
@@ -44,6 +45,7 @@ if (require.main === module) {
   }).catch((error) => {
     console.error(error);
   });
+  */
 
 
     // Función que lee un archivo y retorna promesa con el contenido del archivo
